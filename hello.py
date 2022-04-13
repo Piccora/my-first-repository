@@ -1,2 +1,3 @@
 print("Hello World!")
-print("You suck :kyarusmug:")
+
+good_things = ["puddings", "purins", "Kyarus"]
