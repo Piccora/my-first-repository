@@ -1,7 +1,4 @@
 # Large power
-import telnetlib
-
-
 def power_number(base, exponent):
     number = base ** exponent
     if number > 5000:
@@ -88,13 +85,12 @@ print(movie_review(10))
 
 # Max Number
 def max_number(num1, num2, num3):
-    if num1 == num2 or num1 == num2 or num2 == num3:
-        return "It's a tie!"
-    elif num1 > num2 and num1 > num3:
+    if num1 > num2 and num1 > num3:
         return num1
-    elif num2 > num3:
+    elif num2 > num3 and num2 > num1:
         return num2
-    else:
+    elif num3 > num2 and num3 > num1:
         return num3
-    
+    else:
+        return "It's a tie!"
 print(max_number(2, 3, 5))
